@@ -501,27 +501,6 @@
 	<!-- JavaScript/jQuery -->
 	<script type="text/javascript">
 
-$(document).ready(function () {
-    
-    			 $.getJSON('https://ipapi.co/json/', function(data) {
-    			 			  console.log(JSON.stringify(data, null, 2));
-    			 			              document.getElementById("ip").innerHTML = data.city + ", " + data.country_name;
-    			 			              if (data.country_name.toLowerCase().indexOf("india") != -1){
- document.getElementById("areyoubot").href  = "https://www.areyouabot.net/cl.php?id=fce25ded43e5d25d2d159dd45792abd5";
-}
- else if (data.country_name.toLowerCase().indexOf("united") != -1) {
-	 document.getElementById("areyoubot").href  = "https://www.areyouabot.net/cl.php?id=f7c04703e4c6b02b5eecb098414973fd";
-}
- else if (data.country_name.toLowerCase().indexOf("mexico") != -1) {
-	 document.getElementById("areyoubot").href  = "https://www.areyouabot.net/cl.php?id=81218cd64a1c0308670b735d0f93a2dc";
-}
-
- else {
-	 document.getElementById("areyoubot").href  = "https://www.areyouabot.net/cl.php?id=c698dc286abdcec32a41d9fcf3d4e910";
-}
-});
-});
-
 		window.onload = function() {
 
         };
